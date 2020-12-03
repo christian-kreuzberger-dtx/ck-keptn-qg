@@ -24,6 +24,8 @@ objectives:
           - "<=+100%"
           - ">=-80%"
   - sli: "error_rate"
+  - sli: "memory_usage"
+  - sli: "throughput"
 total_score:
   pass: "90%"
   warning: "75%"
