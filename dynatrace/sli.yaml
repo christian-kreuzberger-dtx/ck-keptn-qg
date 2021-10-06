@@ -8,4 +8,4 @@ indicators:
   response_time_p95: "metricSelector=builtin:service.response.time:merge(\"dt.entity.service\"):percentile(95)&entitySelector=type(SERVICE),tag(keptn_selfmon),tag(keptn_selfmon_service:$SERVICE)"
   cpu_time: "metricSelector=builtin:service.cpu.time:merge(\"dt.entity.service\"):percentile(95)&entitySelector=type(SERVICE),tag(keptn_selfmon),tag(keptn_selfmon_service:$SERVICE)"
   io_time: "metricSelector=builtin:service.ioTime:merge(\"dt.entity.service\"):percentile(95)&entitySelector=type(SERVICE),tag(keptn_selfmon),tag(keptn_selfmon_service:$SERVICE)"
-  memory_usage: "metricSelector=builtin:tech.generic.mem.workingSetSize&entitySelector=type(PROCESS_GROUP_INSTANCE),tag(keptn_selfmon),tag(keptn_selfmon_service:$SERVICE)"
+  memory_usage: "metricSelector=builtin:tech.generic.mem.workingSetSize:merge(\"dt.entity.process_group_instance\"):avg&entitySelector=type(PROCESS_GROUP_INSTANCE),tag(keptn_selfmon),tag(keptn_selfmon_service:$SERVICE)"
